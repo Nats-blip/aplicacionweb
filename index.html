@@ -1,58 +1,127 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Meta básicos -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página</title>
+    <meta name="description" content="Descripción de mi página web">
+    <meta name="author" content="Tu Nombre">
+    <title>MOTO CLUB TRAIL HUNTER LA PAZ BOLIVIA</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="estilos.css">
-    <script src="script.js"></script>
-</body>
 </head>
+
 <body>
 
-    <!-- Encabezado -->
+    <!-- Accesibilidad -->
+    <a href="#contenido" class="skip-link">Saltar al contenido</a>
+
+    <!-- HEADER -->
     <header>
-        <h1>Mi Sitio Web</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Sobre mí</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>Moto Club Trail Hunter</h1>
+
+            <nav aria-label="Navegación principal">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#sobre-mi">Sobre mí</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <!-- Contenido principal -->
-    <main>
-        <section>
-            <h2>Bienvenido</h2>
-            <p>Este es el contenido principal de la página.</p>
+    <!-- MAIN -->
+    <main id="contenido">
+
+        <!-- HERO / INICIO -->
+        <section id="inicio" class="hero">
+            <div class="container">
+                <h2>Bienvenido</h2>
+                <p>Una breve introducción atractiva sobre tu sitio.</p>
+                <a href="#servicios" class="btn">Ver servicios</a>
+            </div>
         </section>
 
-        <section>
-            <h2>Servicios</h2>
-            <article>
-                <h3>Servicio 1</h3>
-                <p>Descripción del servicio.</p>
-            </article>
-            <article>
-                <h3>Servicio 2</h3>
-                <p>Descripción del servicio.</p>
-            </article>
+        <!-- SOBRE MÍ -->
+        <section id="sobre-mi">
+            <div class="container">
+                <h2>Sobre mí</h2>
+                <p>Información sobre ti o tu empresa.</p>
+            </div>
         </section>
-    </main>
 
-    <!-- Barra lateral -->
+<!-- SERVICIOS -->
+<section id="servicios">
+    <div class="container">
+        <h2>Servicios</h2>
+
+        <div class="grid">
+
+            <article class="card">
+                <h3>Alojamiento para motoviajeros</h3>
+                <p>Ofrecemos alojamiento seguro y cómodo para motociclistas de otros países que están recorriendo la región.</p>
+            </article>
+
+            <article class="card">
+                <h3>Enseñanza para moteros principiantes</h3>
+                <p>Clases prácticas y teóricas para quienes desean aprender a conducir motocicletas de forma segura.</p>
+            </article>
+
+            <article class="card">
+                <h3>Trámites vehiculares</h3>
+                <p>Realizamos cambios de nombre e inscripción de nuevos vehículos de manera rápida y confiable.</p>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+        <!-- CONTACTO -->
+<section id="contacto">
+    <div class="container">
+        <h2>Contacto</h2>
+
+        <!-- Información de contacto -->
+        <p><strong>Teléfono / WhatsApp:</strong> 67670516</p>
+
+        <form>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</section>
+    <!-- ASIDE -->
     <aside>
-        <h3>Información adicional</h3>
-        <p>Contenido secundario o enlaces útiles.</p>
+        <div class="container">
+            <h3>Noticias o enlaces</h3>
+            <p>Contenido complementario.</p>
+        </div>
     </aside>
 
-    <!-- Pie de página -->
+    <!-- FOOTER -->
     <footer>
-        <p>&copy; 2026 Mi Sitio Web</p>
-    </footer>
+        <div class="container">
+            <p>&copy; 2026 Mi Sitio Web</p>
 
+            <nav aria-label="Redes sociales">
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+  <script src="script.js"></script> 
 </body>
 </html>
